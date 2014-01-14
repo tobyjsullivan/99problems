@@ -39,4 +39,15 @@ object ProblemsApp extends Application {
   println(length(List(1, 1, 2, 3, 5, 8)))
   
   println(reverse(List(1, 1, 2, 3, 5, 8)))
+  
+  println(P06.isPalindrome(List(1, 2, 3, 2, 1)))
+  println(P06.isPalindrome(List(1, 2, 3, 6, 1)))
+  
+  println(P07.flatten(List(List(1, 1), 2, List(3, List(5, 8)))))
+  
+  println(P08.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
+  println(P08.altCompress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
+  println(P08.altCompress2(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
+  
+  println(P14.duplicate(List('a, 'b, 'c, 'c, 'd)))
 }
