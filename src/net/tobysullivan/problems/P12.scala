@@ -1,13 +1,9 @@
 package net.tobysullivan.problems
 
-object P12 {
-  def explode[T](x: T, n: Int): List[T] = n match {
-    case 0 => List()
-    case n => x :: explode(x, n - 1)
+object P12 {  
+  def decode[T](l: List[Tuple2[Int, T]]): List[T] = l match {
+    case List() => List()
+    case List((0, _)) => List()
+    case (n, x) :: xs => (x :: decode(List((n - 1, x)))) ::: decode(xs)
   }
-
-  def decode[T](l: List[Tuple2[Int, T]]): List[T] = l.map[List[T], List[List[T]]](
-    _ match {
-      case (n, x) => explode(x, n)
-    }).flatMap { x => x }
 }
