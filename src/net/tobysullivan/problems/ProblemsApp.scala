@@ -50,4 +50,6 @@ object ProblemsApp extends Application {
   println(P08.altCompress2(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
   
   println(P14.duplicate(List('a, 'b, 'c, 'c, 'd)))
+  
+  
 }
